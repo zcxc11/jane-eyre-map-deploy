@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《简·爱》人物关系图 · Jane Eyre Character Map</title>
+<meta name="description" content="《简·爱》人物关系图与思维导图：21 位人物、22 条关系、五段人生地理、六组关键关系、经典台词与结局。点击人物即可高亮其全部关系。">
+<meta name="author" content="Jane Eyre Character Map contributors">
+<meta property="og:type" content="website">
+<meta property="og:title" content="《简·爱》人物关系图 · Jane Eyre Character Map">
+<meta property="og:description" content="21 位人物、22 条关系、五段人生地理。一张可交互的图，读懂夏洛蒂·勃朗特的《简·爱》。">
+<meta name="theme-color" content="#16130f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231e1a17'/><text x='32' y='45' font-size='34' text-anchor='middle' fill='%23a8863f' font-family='serif'>简</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#graph">跳到正文</a>
+
+<!-- ============================================================ 导航 -->
+<header class="site-header">
+  <a class="brand" href="#top">简·爱<span class="brand-en">Jane Eyre</span></a>
+  <button class="nav-toggle" aria-label="打开目录" aria-expanded="false" aria-controls="nav"><span></span></button>
+  <nav class="nav" id="nav" aria-label="页面目录">
+    <a href="#graph">关系图</a>
+    <a href="#relationships">关键关系</a>
+    <a href="#journey">人生地理</a>
+    <a href="#mindmap">思维导图</a>
+    <a href="#characters">人物速查</a>
+    <a href="#endings">结局</a>
+    <a href="#lines">名句</a>
+  </nav>
+</header>
+
+<!-- ============================================================== 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-kicker">Charlotte Brontë · 1847</div>
+    <h1>简·爱<span class="en">JANE EYRE</span></h1>
+    <div class="hero-rule"></div>
+    <p class="hero-lede">
+      「你以为，因为我穷、低微、不美、矮小，我就没有灵魂、没有心吗？」<br>
+      1847 年，一位家庭教师用这句话，把整个维多利亚时代的婚姻市场推到一边。<br>
+      <em>这是一张可交互的地图：二十一个人，二十二条关系，五段人生地理。</em>
+    </p>
+    <div class="hero-stats">
+      <div><b>21</b><span>人物</span></div>
+      <div><b>22</b><span>关系</span></div>
+      <div><b>5</b><span>段旅程</span></div>
+      <div><b>38</b><span>章</span></div>
+    </div>
+    <a class="hero-cta" href="#graph">
+      开始探索
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M12 4v14M6 13l6 6 6-6"/>
+      </svg>
+    </a>
+  </div>
+  <div class="scroll-cue">SCROLL</div>
+</section>
+
+<!-- ========================================================== 人物关系图 -->
+<section class="section" id="graph">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Character Map</div>
+      <h2>一张图，看清二十一个人的位置<span class="h2-en">Click a name to light up its ties</span></h2>
+      <p class="lede">
+        <b>点击任一人物</b>，与他/她相关的连线会亮起、其余淡出；右侧随即展开这个人物的速写、关系清单与结局。
+        也可以按家族或场景筛选，看同一屋檐下的人如何彼此牵扯。
+      </p>
+    </div>
+
+    <div class="graph-card reveal">
+      <div class="graph-toolbar">
+        <div class="chips" id="group-chips" role="group" aria-label="按家族或场景筛选"></div>
+        <div class="graph-hint">点击人物高亮 · <kbd>Esc</kbd> 复位</div>
+      </div>
+
+      <div class="graph-stage" id="graph-mount"></div>
+
+      <div class="detail-panel" id="detail-panel" aria-live="polite">
+        <button class="dp-close" id="dp-close" aria-label="关闭人物面板">×</button>
+        <div class="dp-head" id="dp-head"></div>
+        <div class="dp-body" id="dp-body"></div>
+      </div>
+
+      <div class="graph-legend" id="graph-legend"></div>
+    </div>
+
+    <p class="footnote reveal">
+      注：图中只呈现有直接关系的人物；海伦的父亲、里弗斯家的女仆等次要人物未列入，以免图面过密。
+      五段场景以颜色分区：绛红＝盖茨海德，青绿＝洛伍德，藏蓝＝桑菲尔德，绛紫＝沼泽居，赭金＝马德拉。
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================== 关键关系 -->
+<section class="section section--tint" id="relationships">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Key Relationships</div>
+      <h2>六组关键关系，六种权力结构<span class="h2-en">Six relationships that hold the novel together</span></h2>
+      <p class="lede">
+        《简·爱》里的每一段关系都是一次谈判：爱与尊严、金钱与门第、使命与欲望。
+        下面六组，是推动情节、也撑起主题的支点。
+      </p>
+    </div>
+    <div class="rels-grid" id="rels-grid"></div>
+  </div>
+</section>
+
+<!-- ========================================================== 人生地理 -->
+<section class="section" id="journey">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Five Places</div>
+      <h2>五段人生地理<span class="h2-en">Gateshead → Lowood → Thornfield → Moor House → Ferndean</span></h2>
+      <p class="lede">
+        小说的结构是一张地图：每一次搬家，都是一次身份的重置。
+        简从被收养的孤儿，变成学生、教师、恋人、继承人，最后成为她自己。
+      </p>
+    </div>
+    <div class="journey" id="journey"></div>
+  </div>
+</section>
+
+<!-- ========================================================== 思维导图 -->
+<section class="section section--dark" id="mindmap">
+  <div class="section-inner">
+    <div class="section-head section-head--center reveal">
+      <div class="eyebrow">Mind Map</div>
+      <h2>全书结构，六条主线<span class="h2-en">Plot · Themes · Symbols · Characters · Lines · Context</span></h2>
+      <p class="lede">
+        情节、主题、意象、人物、名句、作者背景——六个分支互为索引。
+        点击任一彩色标签，可聚焦该分支细读。
+      </p>
+    </div>
+    <div class="mindmap-card reveal" id="mindmap-mount"></div>
+    <div class="mm-tip" style="justify-content:center">点击标签聚焦分支，再点一次恢复全图</div>
+  </div>
+</section>
+
+<!-- ========================================================== 人物速查 -->
+<section class="section" id="characters">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Quick Reference</div>
+      <h2>人物速查表<span class="h2-en">Who is who, and where they stand</span></h2>
+      <p class="lede">按登场场景排序。若只想记住名字和归属，看这一张表就够了。</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table id="char-table">
+        <thead>
+          <tr>
+            <th scope="col">人物</th>
+            <th scope="col">身份</th>
+            <th scope="col">家族 / 场景</th>
+            <th scope="col">关键关系</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== 结局 -->
+<section class="section section--tint" id="endings">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">How It Ends</div>
+      <h2>一场大火之后的名单<span class="h2-en">Who leaves, who stays</span></h2>
+      <p class="lede">
+        桑菲尔德的火既是情节的清算，也是象征的清算：把不属于爱情的东西烧掉，剩下的人才配站在一起。
+      </p>
+    </div>
+    <div class="endings">
+      <div class="end-card reveal">
+        <h3>离场</h3>
+        <div class="end-sub">死亡与退席 · 5 人</div>
+        <ul class="end-list" id="end-gone"></ul>
+      </div>
+      <div class="end-card reveal">
+        <h3>留下</h3>
+        <div class="end-sub">尾声里的归宿 · 8 组</div>
+        <ul class="end-list" id="end-stay"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== 名句 -->
+<section class="section" id="lines">
+  <div class="section-inner">
+    <div class="section-head reveal">
+      <div class="eyebrow">Famous Lines</div>
+      <h2>十二句台词，十二个转折<span class="h2-en">With the chapter, the context, and why it matters</span></h2>
+      <p class="lede">
+        英文原文据 Oxford World's Classics 通行文本；中译为便于阅读的意译，非逐字直译。
+        按人物筛选，可快速找到某个角色的语言习惯。
+      </p>
+    </div>
+    <div class="quote-toolbar" id="quote-filters" role="group" aria-label="按人物筛选台词"></div>
+    <div class="quote-grid" id="quote-grid"></div>
+  </div>
+</section>
+
+<!-- ============================================================== 页脚 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">简·爱<span>JANE EYRE CHARACTER MAP</span></p>
+      </div>
+      <div class="footer-links">
+        <a href="#top">回到顶部</a>
+        <a href="#graph">人物关系图</a>
+        <a href="#mindmap">思维导图</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span><b>内容范围</b>：21 位人物、22 条直接关系，覆盖盖茨海德、洛伍德、桑菲尔德、沼泽居、芬丁五段场景。</span>
+      <span><b>文本依据</b>：夏洛蒂·勃朗特《简·爱》（1847）。引文章号据 Oxford World's Classics 通行版本；中译为便于阅读的意译。</span>
+      <span><b>开源</b>：代码以 MIT 许可发布，文字内容以 CC BY-SA 4.0 许可发布。数据集中在 <code>js/data.js</code>，欢迎提交补充与勘误。</span>
+      <span><b>声明</b>：本站为非营利的阅读辅助材料，与原书出版方无关。图中人物解说含编者观点，供讨论，不作为定论。</span>
+    </div>
+  </div>
+</footer>
+
+<noscript>
+  <div style="padding:24px;text-align:center;background:#8c2f39;color:#fff">
+    本站的关系图与思维导图依赖 JavaScript 绘制，请开启后刷新。
+  </div>
+</noscript>
+
+<script src="js/data.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/mindmap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
