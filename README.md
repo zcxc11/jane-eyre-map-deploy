@@ -59,7 +59,7 @@ jane-eyre-map/
 │   ├── mindmap.js          # 思维导图：布局渲染与聚焦交互
 │   └── main.js             # 其余板块渲染、导航、滚动动画、台词筛选
 ├── .github/workflows/
-│   └── pages.yml           # GitHub Pages 自动部署
+│   └── pages.yml           # （可选）GitHub Actions 自动部署
 ├── .nojekyll
 ├── LICENSE                 # 代码许可（MIT）
 └── README.md
@@ -67,17 +67,17 @@ jane-eyre-map/
 
 ## 部署到 GitHub Pages
 
-**方式一（推荐，Actions 自动部署）**
+**方式一（推荐，零配置）**
 
-1. 把仓库推到 GitHub（默认分支 `main`）；
-2. 仓库 Settings → Pages → Source 选 **GitHub Actions**；
-3. 推送即自动部署（工作流已内置：`.github/workflows/pages.yml`）。
+仓库 Settings → Pages → **Source** 选 *Deploy from a branch* → 分支 `main`、目录 `/ (root)` → Save。
+纯静态站点，`.nojekyll` 已就位，保存后约 1 分钟即可访问。
 
-**方式二（从 main 分支直接发布）**
+**方式二（可选，Actions 自动部署）**
 
-Settings → Pages → Source 选 *Deploy from a branch* → 选 `main` / root。
+把 `.github/workflows/pages.yml` 提交进仓库（注意：推送该文件需要 token 具备 `workflow` scope），
+然后 Settings → Pages → Source 选 **GitHub Actions**，之后每次 push 到 `main` 自动部署。
 
-部署后地址为 `https://<your-name>.github.io/jane-eyre-map/`。
+部署后地址为 `https://<your-name>.github.io/<repo-name>/`。
 
 ## 贡献
 
